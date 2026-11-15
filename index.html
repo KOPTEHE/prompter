@@ -1,11 +1,10 @@
 <!doctype html>
-<html lang="ru">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Суфлёр — поддержка</title>
-<meta name="description" content="Суфлёр — бесплатный телесуфлёр с записью видео для iPhone. Как пользоваться, ответы на вопросы, поддержка. Teleprompter Prompter — support." />
-<link rel="canonical" href="https://proshutinskii.com/prompter/">
+<title>Prompter — Teleprompter for iPhone</title>
+<meta name="description" content="Prompter is a free teleprompter with video recording for iPhone. How to use, FAQ and support. No accounts, no ads, nothing leaves your device." />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -29,7 +28,7 @@
   .container{
     max-width: 720px;
     margin: 0 auto;
-    padding: 56px 24px 96px;
+    padding: 40px 16px 80px;
   }
   .back{
     display: inline-flex;
@@ -86,46 +85,51 @@
     font-weight: 600;
   }
   strong{ color: var(--ink); font-weight: 600; }
-  .sub{ font-family:'Fraunces',serif; font-size:20px; color:var(--muted); margin:0 0 28px; }
   ol{ margin:0 0 14px; padding-left:22px; }
+  .sub{ font-family:'Fraunces',serif; font-size:20px; color:var(--muted); margin:0 0 28px; }
+  .nav{ display:flex; flex-wrap:wrap; gap:4px 10px; font-size:14px; color:var(--muted); margin-bottom:36px; }
+  .nav a{ color:var(--muted); text-decoration:none; }
+  .nav a:hover{ color:var(--ink); }
+  .nav .cur{ color:var(--ink); font-weight:600; }
+  .back{ margin-bottom:24px; }
+  .foot{ display:flex; flex-wrap:wrap; gap:4px 16px; font-size:14px; margin:0 0 12px; }
+  h1,h2,p,li{ overflow-wrap:anywhere; }
+  @media (min-width:600px){ .container{ padding:56px 24px 96px; } }
 </style>
 </head>
 <body>
 <div class="container">
-  <h1>Суфлёр</h1>
-  <p class="sub">Телесуфлёр с записью видео для iPhone</p>
+<nav class="nav"><span class="cur">Prompter</span> <span aria-hidden="true">·</span> <a href="privacy.html">Privacy</a> <span aria-hidden="true">·</span> <a href="terms.html">Terms</a> <span aria-hidden="true">·</span> <a href="ru/index.html">Русский</a></nav>
+<h1>Prompter</h1>
+  <p class="sub">Teleprompter with video recording for iPhone</p>
 
-  <p>Вставь текст, нажми запись — и читай, глядя прямо в объектив: текст плавно едет под фронтальной камерой, а видео сохраняется сразу в «Фото». Без рендера, без водяного знака. Приложение полностью бесплатное: без покупок, подписок, регистрации и рекламы. Видео и тексты не покидают телефон.</p>
+  <p>Paste your script, tap record, and read while the text scrolls right under the front camera lens. The video is saved straight to your Photos library, with no rendering step and no watermark. The app is completely free: no purchases, no subscriptions, no accounts, no ads, no analytics. It makes no network requests, so your scripts and videos never leave your device.</p>
+  <p class="small">iPhone only, iOS 17 or later. Listed in the App Store as “Teleprompter Prompter”; the icon label reads “Prompter”.</p>
 
-  <h2>Как пользоваться</h2>
+  <h2>How to use</h2>
   <ol>
-    <li>Вставь или напиши свой текст.</li>
-    <li>Нажми «К записи».</li>
-    <li>Разреши доступ к камере и микрофону.</li>
-    <li>Нажми красную кнопку и читай. Тап по тексту — пауза. Не вышло с первого раза — «Ещё дубль».</li>
+    <li>Paste or type your script (“Paste” drops in whatever is on your clipboard; “Clear” empties the field).</li>
+    <li>Tap “Record”.</li>
+    <li>Allow access to the camera and microphone.</li>
+    <li>Press the red button and start reading. Tap the text to pause. If a take doesn’t work out, tap “Another take”. “Back to script” takes you back to editing.</li>
+    <li>When you stop, the video is saved to Photos and you’ll see “Saved to Photos”.</li>
   </ol>
 
-  <h2>Вопросы и ответы</h2>
-  <p><strong>Звук пишется с наушников?</strong><br>Да. Если подключены Bluetooth- или проводные наушники с микрофоном, iOS запишет звук с них. Чтобы писать с микрофона телефона, отключи наушники.</p>
-  <p><strong>Почему видео не зеркальное?</strong><br>В превью ты видишь себя как в зеркале, но в готовом файле кадр обычный, как его увидят зрители.</p>
-  <p><strong>Как поменять скорость и шрифт?</strong><br>В настройках на экране записи: ползунки скорости прокрутки и размера шрифта, а также отсчёт перед стартом.</p>
-  <p><strong>Где найти записи?</strong><br>В приложении «Фото» на iPhone — видео сохраняются туда автоматически.</p>
-  <p><strong>Что будет, если позвонят во время записи?</strong><br>Запись остановится, уже снятое сохранится в «Фото», а в приложении появится баннер об этом.</p>
+  <h2>FAQ</h2>
+  <p><strong>Does it record audio from my headphones?</strong><br>Yes. If Bluetooth or wired headphones with a microphone are connected, iOS records the sound from them. To use the iPhone’s own microphone, disconnect the headphones.</p>
+  <p><strong>Why isn’t the video mirrored?</strong><br>The preview shows you as in a mirror, but the saved file is not flipped, so it looks the way your viewers will see it.</p>
+  <p><strong>How do I change the speed and font size?</strong><br>In the settings on the recording screen: sliders for scroll “Speed” and font size, plus a “Countdown” before the recording starts.</p>
+  <p><strong>Where are my videos?</strong><br>In the Photos app on your iPhone. Recordings are saved there automatically.</p>
+  <p><strong>What happens if I get a phone call while recording?</strong><br>Recording stops, whatever was captured is saved to Photos, and the app shows a banner telling you so.</p>
 
-  <h2>Поддержка</h2>
+  <h2>Support</h2>
   <p>Telegram: <a href="https://t.me/koptehe" target="_blank" rel="noopener">@koptehe</a><br>
-  Почта: <a href="mailto:koptehe@gmail.com">koptehe@gmail.com</a></p>
-  <p><a href="privacy.html">Политика конфиденциальности</a></p>
+  Email: <a href="mailto:koptehe@gmail.com">koptehe@gmail.com</a></p>
+  <p>Questions, bug reports and ideas are welcome. I usually reply within a couple of days.</p>
 
   <hr>
-
-  <h2 id="en">Teleprompter Prompter — support</h2>
-  <p>Teleprompter Prompter is a teleprompter with built-in video recording for iPhone. Paste your script, tap record, and read while the text scrolls right under the front camera lens. The video is saved straight to your Photos library, with no rendering step and no watermark. The app is completely free: no purchases, no subscriptions, no accounts, no ads. Nothing leaves your device.</p>
-  <p>To start, paste your text, tap "Record", allow camera and microphone access, and press the red button. Tap the text to pause; use "Another take" to retry. Scroll speed and font size can be changed in the settings on the recording screen. If a phone call interrupts recording, it stops and what was captured is saved to Photos.</p>
-  <p>Support: Telegram <a href="https://t.me/koptehe" target="_blank" rel="noopener">@koptehe</a>, email <a href="mailto:koptehe@gmail.com">koptehe@gmail.com</a>. <a href="privacy.html">Privacy policy</a>.</p>
-
-  <hr>
-  <p class="small">© 2026 Дмитрий Прошутинский</p>
+  <p class="foot"><a href="privacy.html">Privacy Policy</a> <a href="terms.html">Terms of Use</a> <a href="ru/index.html">Русская версия</a></p>
+  <p class="small">© 2026 Dmitrii Proshutinskii</p>
 </div>
 </body>
 </html>
